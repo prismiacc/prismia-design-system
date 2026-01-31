@@ -1,21 +1,20 @@
-MIT License
+Licença Proprietária Prismia - Silvia Nunes de Oliveira
 
-Copyright (c) 2025 prismiacc
+Copyright (c) 2026 Prismia
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Este Design System, incluindo seus tokens, componentes, documentação,
+assets visuais e código-fonte associado, é propriedade exclusiva da Prismia.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+É proibido:
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+• copiar, reproduzir ou redistribuir total ou parcialmente
+• utilizar em projetos externos sem autorização expressa
+• modificar para fins comerciais ou públicos
+• publicar em repositórios públicos
+
+O uso é permitido exclusivamente para projetos internos da Prismia
+ou mediante contrato/licença específica.
+
+O software é fornecido "como está", sem garantias de qualquer tipo.
+
+Todos os direitos reservados.
