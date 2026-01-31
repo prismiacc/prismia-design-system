@@ -1,0 +1,26 @@
+{
+  "name": "prismia-design-system",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Design System oficial do Prismia - Tokens, componentes e documentação",
+  "scripts": {
+    "build": "pnpm -r build",
+    "build:tokens": "pnpm --filter @prismia/tokens build",
+    "dev": "pnpm --filter @prismia/docs dev",
+    "storybook": "pnpm --filter @prismia/docs storybook",
+    "build:storybook": "pnpm --filter @prismia/docs build-storybook"
+  },
+  "keywords": [
+    "design-system",
+    "prismia",
+    "tokens",
+    "react",
+    "tailwind",
+    "css-modules"
+  ],
+  "author": "Prismia Team",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
