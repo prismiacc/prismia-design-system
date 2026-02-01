@@ -1,0 +1,30 @@
+{
+  "name": "@prismia/docs",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Documentação Storybook do Prismia Design System",
+  "scripts": {
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@prismia/tokens": "workspace:*",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "^7.6.10",
+    "@storybook/addon-interactions": "^7.6.10",
+    "@storybook/addon-links": "^7.6.10",
+    "@storybook/addon-blocks": "^7.6.10",
+    "@storybook/react": "^7.6.10",
+    "@storybook/react-vite": "^7.6.10",
+    "@storybook/testing-library": "^0.2.2",
+    "@types/react": "^18.2.45",
+    "@types/react-dom": "^18.2.18",
+    "storybook": "^7.6.10",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.8"
+  }
+}

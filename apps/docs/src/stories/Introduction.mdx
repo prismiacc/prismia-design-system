@@ -1,0 +1,63 @@
+import { Meta } from '@storybook/blocks';
+
+<Meta title="Prismia/Introdução" />
+
+# Prismia Design System
+
+Bem-vindo à documentação do Prismia Design System.
+
+## Sobre o Prismia
+
+O Prismia é um design system enterprise-grade construído para facilitar o desenvolvimento de interfaces consistentes, acessíveis e escaláveis.
+
+### Arquitetura
+
+O Prismia utiliza uma arquitetura em 3 camadas de tokens:
+
+- **BASE**: Tokens fundamentais (cores primitivas, espaçamentos base)
+- **SEMANTIC**: Tokens com significado semântico (background, text, border)
+- **COMPONENT**: Tokens específicos de componentes (button-primary-bg, card-bg)
+
+### Pacotes
+
+- `@prismia/tokens` - Design tokens em JSON e CSS Variables
+- `@prismia/ui-tailwind` - Componentes React com Tailwind CSS
+- `@prismia/ui-css` - Componentes React com CSS Modules
+- `@prismia/docs` - Esta documentação
+
+### Instalação Rápida
+
+```bash
+pnpm add @prismia/tokens
+```
+
+### Uso
+
+```tsx
+import '@prismia/tokens/css';
+
+function App() {
+  return (
+    <div style={{
+      backgroundColor: 'var(--semantic-background-surface)',
+      color: 'var(--semantic-text-primary)',
+      padding: 'var(--spacing-4)',
+      borderRadius: 'var(--radius-m)'
+    }}>
+      Hello Prismia!
+    </div>
+  );
+}
+```
+
+### Compatibilidade
+
+- ✅ Lovable
+- ✅ React / Next.js
+- ✅ Vite
+- ✅ Tailwind CSS
+- ✅ CSS-in-JS
+
+## Navegação
+
+Explore os componentes no menu lateral para ver exemplos interativos e documentação detalhada.

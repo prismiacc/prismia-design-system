@@ -1,0 +1,405 @@
+import { Meta } from '@storybook/blocks';
+import { 
+  Home, User, Search, Settings, Plus, Minus, Check, X, 
+  AlertCircle, Bell, Heart, Star, Trash, Edit, Eye, Lock, 
+  Calendar, Upload, Download, ArrowRight, Mail, Phone,
+  Menu, ChevronDown, Filter, Grid, List, Package
+} from 'lucide-react';
+
+<Meta title="Design Tokens/Icon System" />
+
+# Icon System
+
+The Prismia Design System uses **lucide-react** as the official icon library.
+
+## Installation
+
+```bash
+npm install lucide-react
+```
+
+## Usage
+
+Import icons directly from lucide-react:
+
+```jsx
+import { Home, User, Search } from 'lucide-react';
+
+function MyComponent() {
+  return (
+    <>
+      <Home size={24} />
+      <User size={24} color="#3C3F45" />
+      <Search size={20} strokeWidth={1.5} />
+    </>
+  );
+}
+```
+
+## Common Icons
+
+<div style={{ 
+  display: 'grid', 
+  gridTemplateColumns: 'repeat(auto-fill, minmax(140px, 1fr))', 
+  gap: '16px', 
+  marginTop: '32px' 
+}}>
+  <div style={{ 
+    display: 'flex', 
+    flexDirection: 'column', 
+    alignItems: 'center', 
+    padding: '16px', 
+    border: '1px solid var(--semantic-border-default)',
+    borderRadius: '8px'
+  }}>
+    <Home size={32} color="var(--base-contrast-graphite)" />
+    <div style={{ marginTop: '8px', fontSize: '13px', textAlign: 'center' }}>Home</div>
+  </div>
+  
+  <div style={{ 
+    display: 'flex', 
+    flexDirection: 'column', 
+    alignItems: 'center', 
+    padding: '16px', 
+    border: '1px solid var(--semantic-border-default)',
+    borderRadius: '8px'
+  }}>
+    <User size={32} color="var(--base-contrast-graphite)" />
+    <div style={{ marginTop: '8px', fontSize: '13px', textAlign: 'center' }}>User</div>
+  </div>
+  
+  <div style={{ 
+    display: 'flex', 
+    flexDirection: 'column', 
+    alignItems: 'center', 
+    padding: '16px', 
+    border: '1px solid var(--semantic-border-default)',
+    borderRadius: '8px'
+  }}>
+    <Search size={32} color="var(--base-contrast-graphite)" />
+    <div style={{ marginTop: '8px', fontSize: '13px', textAlign: 'center' }}>Search</div>
+  </div>
+  
+  <div style={{ 
+    display: 'flex', 
+    flexDirection: 'column', 
+    alignItems: 'center', 
+    padding: '16px', 
+    border: '1px solid var(--semantic-border-default)',
+    borderRadius: '8px'
+  }}>
+    <Settings size={32} color="var(--base-contrast-graphite)" />
+    <div style={{ marginTop: '8px', fontSize: '13px', textAlign: 'center' }}>Settings</div>
+  </div>
+  
+  <div style={{ 
+    display: 'flex', 
+    flexDirection: 'column', 
+    alignItems: 'center', 
+    padding: '16px', 
+    border: '1px solid var(--semantic-border-default)',
+    borderRadius: '8px'
+  }}>
+    <Plus size={32} color="var(--base-contrast-graphite)" />
+    <div style={{ marginTop: '8px', fontSize: '13px', textAlign: 'center' }}>Plus</div>
+  </div>
+  
+  <div style={{ 
+    display: 'flex', 
+    flexDirection: 'column', 
+    alignItems: 'center', 
+    padding: '16px', 
+    border: '1px solid var(--semantic-border-default)',
+    borderRadius: '8px'
+  }}>
+    <Minus size={32} color="var(--base-contrast-graphite)" />
+    <div style={{ marginTop: '8px', fontSize: '13px', textAlign: 'center' }}>Minus</div>
+  </div>
+  
+  <div style={{ 
+    display: 'flex', 
+    flexDirection: 'column', 
+    alignItems: 'center', 
+    padding: '16px', 
+    border: '1px solid var(--semantic-border-default)',
+    borderRadius: '8px'
+  }}>
+    <Check size={32} color="var(--base-semantic-success)" />
+    <div style={{ marginTop: '8px', fontSize: '13px', textAlign: 'center' }}>Check</div>
+  </div>
+  
+  <div style={{ 
+    display: 'flex', 
+    flexDirection: 'column', 
+    alignItems: 'center', 
+    padding: '16px', 
+    border: '1px solid var(--semantic-border-default)',
+    borderRadius: '8px'
+  }}>
+    <X size={32} color="var(--base-semantic-error)" />
+    <div style={{ marginTop: '8px', fontSize: '13px', textAlign: 'center' }}>X</div>
+  </div>
+  
+  <div style={{ 
+    display: 'flex', 
+    flexDirection: 'column', 
+    alignItems: 'center', 
+    padding: '16px', 
+    border: '1px solid var(--semantic-border-default)',
+    borderRadius: '8px'
+  }}>
+    <AlertCircle size={32} color="var(--base-semantic-warning)" />
+    <div style={{ marginTop: '8px', fontSize: '13px', textAlign: 'center' }}>AlertCircle</div>
+  </div>
+  
+  <div style={{ 
+    display: 'flex', 
+    flexDirection: 'column', 
+    alignItems: 'center', 
+    padding: '16px', 
+    border: '1px solid var(--semantic-border-default)',
+    borderRadius: '8px'
+  }}>
+    <Bell size={32} color="var(--base-contrast-graphite)" />
+    <div style={{ marginTop: '8px', fontSize: '13px', textAlign: 'center' }}>Bell</div>
+  </div>
+  
+  <div style={{ 
+    display: 'flex', 
+    flexDirection: 'column', 
+    alignItems: 'center', 
+    padding: '16px', 
+    border: '1px solid var(--semantic-border-default)',
+    borderRadius: '8px'
+  }}>
+    <Heart size={32} color="var(--base-semantic-error)" />
+    <div style={{ marginTop: '8px', fontSize: '13px', textAlign: 'center' }}>Heart</div>
+  </div>
+  
+  <div style={{ 
+    display: 'flex', 
+    flexDirection: 'column', 
+    alignItems: 'center', 
+    padding: '16px', 
+    border: '1px solid var(--semantic-border-default)',
+    borderRadius: '8px'
+  }}>
+    <Star size={32} color="var(--base-semantic-warning)" />
+    <div style={{ marginTop: '8px', fontSize: '13px', textAlign: 'center' }}>Star</div>
+  </div>
+  
+  <div style={{ 
+    display: 'flex', 
+    flexDirection: 'column', 
+    alignItems: 'center', 
+    padding: '16px', 
+    border: '1px solid var(--semantic-border-default)',
+    borderRadius: '8px'
+  }}>
+    <Trash size={32} color="var(--base-semantic-error)" />
+    <div style={{ marginTop: '8px', fontSize: '13px', textAlign: 'center' }}>Trash</div>
+  </div>
+  
+  <div style={{ 
+    display: 'flex', 
+    flexDirection: 'column', 
+    alignItems: 'center', 
+    padding: '16px', 
+    border: '1px solid var(--semantic-border-default)',
+    borderRadius: '8px'
+  }}>
+    <Edit size={32} color="var(--base-contrast-graphite)" />
+    <div style={{ marginTop: '8px', fontSize: '13px', textAlign: 'center' }}>Edit</div>
+  </div>
+  
+  <div style={{ 
+    display: 'flex', 
+    flexDirection: 'column', 
+    alignItems: 'center', 
+    padding: '16px', 
+    border: '1px solid var(--semantic-border-default)',
+    borderRadius: '8px'
+  }}>
+    <Eye size={32} color="var(--base-contrast-graphite)" />
+    <div style={{ marginTop: '8px', fontSize: '13px', textAlign: 'center' }}>Eye</div>
+  </div>
+  
+  <div style={{ 
+    display: 'flex', 
+    flexDirection: 'column', 
+    alignItems: 'center', 
+    padding: '16px', 
+    border: '1px solid var(--semantic-border-default)',
+    borderRadius: '8px'
+  }}>
+    <Lock size={32} color="var(--base-contrast-graphite)" />
+    <div style={{ marginTop: '8px', fontSize: '13px', textAlign: 'center' }}>Lock</div>
+  </div>
+  
+  <div style={{ 
+    display: 'flex', 
+    flexDirection: 'column', 
+    alignItems: 'center', 
+    padding: '16px', 
+    border: '1px solid var(--semantic-border-default)',
+    borderRadius: '8px'
+  }}>
+    <Calendar size={32} color="var(--base-contrast-graphite)" />
+    <div style={{ marginTop: '8px', fontSize: '13px', textAlign: 'center' }}>Calendar</div>
+  </div>
+  
+  <div style={{ 
+    display: 'flex', 
+    flexDirection: 'column', 
+    alignItems: 'center', 
+    padding: '16px', 
+    border: '1px solid var(--semantic-border-default)',
+    borderRadius: '8px'
+  }}>
+    <Upload size={32} color="var(--base-contrast-graphite)" />
+    <div style={{ marginTop: '8px', fontSize: '13px', textAlign: 'center' }}>Upload</div>
+  </div>
+  
+  <div style={{ 
+    display: 'flex', 
+    flexDirection: 'column', 
+    alignItems: 'center', 
+    padding: '16px', 
+    border: '1px solid var(--semantic-border-default)',
+    borderRadius: '8px'
+  }}>
+    <Download size={32} color="var(--base-contrast-graphite)" />
+    <div style={{ marginTop: '8px', fontSize: '13px', textAlign: 'center' }}>Download</div>
+  </div>
+  
+  <div style={{ 
+    display: 'flex', 
+    flexDirection: 'column', 
+    alignItems: 'center', 
+    padding: '16px', 
+    border: '1px solid var(--semantic-border-default)',
+    borderRadius: '8px'
+  }}>
+    <ArrowRight size={32} color="var(--base-contrast-graphite)" />
+    <div style={{ marginTop: '8px', fontSize: '13px', textAlign: 'center' }}>ArrowRight</div>
+  </div>
+  
+  <div style={{ 
+    display: 'flex', 
+    flexDirection: 'column', 
+    alignItems: 'center', 
+    padding: '16px', 
+    border: '1px solid var(--semantic-border-default)',
+    borderRadius: '8px'
+  }}>
+    <Mail size={32} color="var(--base-contrast-graphite)" />
+    <div style={{ marginTop: '8px', fontSize: '13px', textAlign: 'center' }}>Mail</div>
+  </div>
+  
+  <div style={{ 
+    display: 'flex', 
+    flexDirection: 'column', 
+    alignItems: 'center', 
+    padding: '16px', 
+    border: '1px solid var(--semantic-border-default)',
+    borderRadius: '8px'
+  }}>
+    <Phone size={32} color="var(--base-contrast-graphite)" />
+    <div style={{ marginTop: '8px', fontSize: '13px', textAlign: 'center' }}>Phone</div>
+  </div>
+  
+  <div style={{ 
+    display: 'flex', 
+    flexDirection: 'column', 
+    alignItems: 'center', 
+    padding: '16px', 
+    border: '1px solid var(--semantic-border-default)',
+    borderRadius: '8px'
+  }}>
+    <Menu size={32} color="var(--base-contrast-graphite)" />
+    <div style={{ marginTop: '8px', fontSize: '13px', textAlign: 'center' }}>Menu</div>
+  </div>
+  
+  <div style={{ 
+    display: 'flex', 
+    flexDirection: 'column', 
+    alignItems: 'center', 
+    padding: '16px', 
+    border: '1px solid var(--semantic-border-default)',
+    borderRadius: '8px'
+  }}>
+    <ChevronDown size={32} color="var(--base-contrast-graphite)" />
+    <div style={{ marginTop: '8px', fontSize: '13px', textAlign: 'center' }}>ChevronDown</div>
+  </div>
+  
+  <div style={{ 
+    display: 'flex', 
+    flexDirection: 'column', 
+    alignItems: 'center', 
+    padding: '16px', 
+    border: '1px solid var(--semantic-border-default)',
+    borderRadius: '8px'
+  }}>
+    <Filter size={32} color="var(--base-contrast-graphite)" />
+    <div style={{ marginTop: '8px', fontSize: '13px', textAlign: 'center' }}>Filter</div>
+  </div>
+  
+  <div style={{ 
+    display: 'flex', 
+    flexDirection: 'column', 
+    alignItems: 'center', 
+    padding: '16px', 
+    border: '1px solid var(--semantic-border-default)',
+    borderRadius: '8px'
+  }}>
+    <Grid size={32} color="var(--base-contrast-graphite)" />
+    <div style={{ marginTop: '8px', fontSize: '13px', textAlign: 'center' }}>Grid</div>
+  </div>
+  
+  <div style={{ 
+    display: 'flex', 
+    flexDirection: 'column', 
+    alignItems: 'center', 
+    padding: '16px', 
+    border: '1px solid var(--semantic-border-default)',
+    borderRadius: '8px'
+  }}>
+    <List size={32} color="var(--base-contrast-graphite)" />
+    <div style={{ marginTop: '8px', fontSize: '13px', textAlign: 'center' }}>List</div>
+  </div>
+  
+  <div style={{ 
+    display: 'flex', 
+    flexDirection: 'column', 
+    alignItems: 'center', 
+    padding: '16px', 
+    border: '1px solid var(--semantic-border-default)',
+    borderRadius: '8px'
+  }}>
+    <Package size={32} color="var(--base-contrast-graphite)" />
+    <div style={{ marginTop: '8px', fontSize: '13px', textAlign: 'center' }}>Package</div>
+  </div>
+</div>
+
+## Icon Props
+
+All lucide-react icons accept the following props:
+
+| Prop | Type | Default | Description |
+|------|------|---------|-------------|
+| `size` | number | 24 | Icon size in pixels |
+| `color` | string | currentColor | Icon color |
+| `strokeWidth` | number | 2 | Stroke width |
+| `className` | string | - | CSS class name |
+
+## Best Practices
+
+- Use `size={24}` for standard UI icons
+- Use `size={20}` for inline text icons  
+- Use `strokeWidth={1.5}` for a lighter appearance
+- Always provide semantic colors from design tokens
+- Use `aria-label` or `aria-hidden` for accessibility
+
+## More Icons
+
+Visit [lucide.dev](https://lucide.dev) to browse all available icons.

@@ -1,0 +1,265 @@
+import { Meta } from '@storybook/blocks';
+
+<Meta title="Design Tokens/Colors & Shadow" />
+
+# Colors & Shadow Tokens
+
+Visual reference for all color and shadow tokens in the Prismia Design System.
+
+## Base Colors
+
+### Neutral Colors
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '16px', marginBottom: '32px' }}>
+  <div>
+    <div style={{ 
+      background: 'var(--base-neutral-offwhite)', 
+      height: '80px', 
+      borderRadius: '8px', 
+      border: '1px solid var(--semantic-border-default)',
+      marginBottom: '8px'
+    }} />
+    <div style={{ fontSize: '14px', fontWeight: '600' }}>base.neutral.offwhite</div>
+    <code style={{ fontSize: '12px', color: 'var(--semantic-text-secondary)' }}>#FBFAF8</code>
+  </div>
+  
+  <div>
+    <div style={{ 
+      background: 'var(--base-neutral-lightgray)', 
+      height: '80px', 
+      borderRadius: '8px', 
+      border: '1px solid var(--semantic-border-default)',
+      marginBottom: '8px'
+    }} />
+    <div style={{ fontSize: '14px', fontWeight: '600' }}>base.neutral.lightgray</div>
+    <code style={{ fontSize: '12px', color: 'var(--semantic-text-secondary)' }}>#ECECEC</code>
+  </div>
+</div>
+
+### Brand Colors
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '16px', marginBottom: '32px' }}>
+  <div>
+    <div style={{ 
+      background: 'var(--base-brand-lavender)', 
+      height: '80px', 
+      borderRadius: '8px', 
+      border: '1px solid var(--semantic-border-default)',
+      marginBottom: '8px'
+    }} />
+    <div style={{ fontSize: '14px', fontWeight: '600' }}>base.brand.lavender</div>
+    <code style={{ fontSize: '12px', color: 'var(--semantic-text-secondary)' }}>#D8CCE8</code>
+  </div>
+  
+  <div>
+    <div style={{ 
+      background: 'var(--base-brand-green)', 
+      height: '80px', 
+      borderRadius: '8px', 
+      border: '1px solid var(--semantic-border-default)',
+      marginBottom: '8px'
+    }} />
+    <div style={{ fontSize: '14px', fontWeight: '600' }}>base.brand.green</div>
+    <code style={{ fontSize: '12px', color: 'var(--semantic-text-secondary)' }}>#CFE1C1</code>
+  </div>
+</div>
+
+### Contrast Colors
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '16px', marginBottom: '32px' }}>
+  <div>
+    <div style={{ 
+      background: 'var(--base-contrast-graphite)', 
+      height: '80px', 
+      borderRadius: '8px', 
+      border: '1px solid var(--semantic-border-default)',
+      marginBottom: '8px'
+    }} />
+    <div style={{ fontSize: '14px', fontWeight: '600' }}>base.contrast.graphite</div>
+    <code style={{ fontSize: '12px', color: 'var(--semantic-text-secondary)' }}>#3C3F45</code>
+  </div>
+  
+  <div>
+    <div style={{ 
+      background: 'var(--base-contrast-deepgray)', 
+      height: '80px', 
+      borderRadius: '8px', 
+      border: '1px solid var(--semantic-border-default)',
+      marginBottom: '8px'
+    }} />
+    <div style={{ fontSize: '14px', fontWeight: '600' }}>base.contrast.deepgray</div>
+    <code style={{ fontSize: '12px', color: 'var(--semantic-text-secondary)' }}>#5A5E66</code>
+  </div>
+</div>
+
+### Semantic Feedback Colors
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '16px', marginBottom: '32px' }}>
+  <div>
+    <div style={{ 
+      background: 'var(--base-semantic-success)', 
+      height: '80px', 
+      borderRadius: '8px', 
+      marginBottom: '8px'
+    }} />
+    <div style={{ fontSize: '14px', fontWeight: '600' }}>base.semantic.success</div>
+    <code style={{ fontSize: '12px', color: 'var(--semantic-text-secondary)' }}>#1A932E</code>
+  </div>
+  
+  <div>
+    <div style={{ 
+      background: 'var(--base-semantic-warning)', 
+      height: '80px', 
+      borderRadius: '8px', 
+      marginBottom: '8px'
+    }} />
+    <div style={{ fontSize: '14px', fontWeight: '600' }}>base.semantic.warning</div>
+    <code style={{ fontSize: '12px', color: 'var(--semantic-text-secondary)' }}>#FBB03B</code>
+  </div>
+  
+  <div>
+    <div style={{ 
+      background: 'var(--base-semantic-error)', 
+      height: '80px', 
+      borderRadius: '8px', 
+      marginBottom: '8px'
+    }} />
+    <div style={{ fontSize: '14px', fontWeight: '600' }}>base.semantic.error</div>
+    <code style={{ fontSize: '12px', color: 'var(--semantic-text-secondary)' }}>#D64545</code>
+  </div>
+  
+  <div>
+    <div style={{ 
+      background: 'var(--base-semantic-info)', 
+      height: '80px', 
+      borderRadius: '8px', 
+      marginBottom: '8px'
+    }} />
+    <div style={{ fontSize: '14px', fontWeight: '600' }}>base.semantic.info</div>
+    <code style={{ fontSize: '12px', color: 'var(--semantic-text-secondary)' }}>#3B82F6</code>
+  </div>
+</div>
+
+## Shadow Tokens
+
+All shadow tokens available in the Prismia Design System.
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))', gap: '24px', marginTop: '24px' }}>
+  <div>
+    <div style={{ 
+      background: 'white', 
+      padding: '32px', 
+      borderRadius: '12px',
+      boxShadow: 'var(--shadow-xs)',
+      marginBottom: '12px',
+      textAlign: 'center'
+    }}>
+      <div style={{ fontSize: '14px', color: 'var(--semantic-text-secondary)' }}>xs shadow</div>
+    </div>
+    <div style={{ fontSize: '14px', fontWeight: '600' }}>shadow.xs</div>
+    <code style={{ fontSize: '12px', color: 'var(--semantic-text-secondary)' }}>0 1px 2px rgba(0,0,0,0.05)</code>
+  </div>
+  
+  <div>
+    <div style={{ 
+      background: 'white', 
+      padding: '32px', 
+      borderRadius: '12px',
+      boxShadow: 'var(--shadow-sm)',
+      marginBottom: '12px',
+      textAlign: 'center'
+    }}>
+      <div style={{ fontSize: '14px', color: 'var(--semantic-text-secondary)' }}>sm shadow</div>
+    </div>
+    <div style={{ fontSize: '14px', fontWeight: '600' }}>shadow.sm</div>
+    <code style={{ fontSize: '12px', color: 'var(--semantic-text-secondary)' }}>0 1px 3px rgba(0,0,0,0.1)</code>
+  </div>
+  
+  <div>
+    <div style={{ 
+      background: 'white', 
+      padding: '32px', 
+      borderRadius: '12px',
+      boxShadow: 'var(--shadow-md)',
+      marginBottom: '12px',
+      textAlign: 'center'
+    }}>
+      <div style={{ fontSize: '14px', color: 'var(--semantic-text-secondary)' }}>md shadow</div>
+    </div>
+    <div style={{ fontSize: '14px', fontWeight: '600' }}>shadow.md</div>
+    <code style={{ fontSize: '12px', color: 'var(--semantic-text-secondary)' }}>0 4px 6px rgba(0,0,0,0.1)</code>
+  </div>
+  
+  <div>
+    <div style={{ 
+      background: 'white', 
+      padding: '32px', 
+      borderRadius: '12px',
+      boxShadow: 'var(--shadow-lg)',
+      marginBottom: '12px',
+      textAlign: 'center'
+    }}>
+      <div style={{ fontSize: '14px', color: 'var(--semantic-text-secondary)' }}>lg shadow</div>
+    </div>
+    <div style={{ fontSize: '14px', fontWeight: '600' }}>shadow.lg</div>
+    <code style={{ fontSize: '12px', color: 'var(--semantic-text-secondary)' }}>0 10px 15px rgba(0,0,0,0.15)</code>
+  </div>
+  
+  <div>
+    <div style={{ 
+      background: 'white', 
+      padding: '32px', 
+      borderRadius: '12px',
+      boxShadow: 'var(--shadow-xl)',
+      marginBottom: '12px',
+      textAlign: 'center'
+    }}>
+      <div style={{ fontSize: '14px', color: 'var(--semantic-text-secondary)' }}>xl shadow</div>
+    </div>
+    <div style={{ fontSize: '14px', fontWeight: '600' }}>shadow.xl</div>
+    <code style={{ fontSize: '12px', color: 'var(--semantic-text-secondary)' }}>0 20px 25px rgba(0,0,0,0.2)</code>
+  </div>
+  
+  <div>
+    <div style={{ 
+      background: 'white', 
+      padding: '32px', 
+      borderRadius: '12px',
+      boxShadow: 'var(--shadow-light)',
+      marginBottom: '12px',
+      textAlign: 'center'
+    }}>
+      <div style={{ fontSize: '14px', color: 'var(--semantic-text-secondary)' }}>light shadow</div>
+    </div>
+    <div style={{ fontSize: '14px', fontWeight: '600' }}>shadow.light</div>
+    <code style={{ fontSize: '12px', color: 'var(--semantic-text-secondary)' }}>0px 2px 6px rgba(0,0,0,0.06)</code>
+  </div>
+  
+  <div>
+    <div style={{ 
+      background: 'white', 
+      padding: '32px', 
+      borderRadius: '12px',
+      boxShadow: 'var(--shadow-medium)',
+      marginBottom: '12px',
+      textAlign: 'center'
+    }}>
+      <div style={{ fontSize: '14px', color: 'var(--semantic-text-secondary)' }}>medium shadow</div>
+    </div>
+    <div style={{ fontSize: '14px', fontWeight: '600' }}>shadow.medium</div>
+    <code style={{ fontSize: '12px', color: 'var(--semantic-text-secondary)' }}>0px 4px 12px rgba(0,0,0,0.1)</code>
+  </div>
+</div>
+
+## Usage
+
+All tokens are available as CSS variables:
+
+```css
+/* Colors */
+background: var(--base-neutral-offwhite);
+color: var(--base-contrast-graphite);
+
+/* Shadows */
+box-shadow: var(--shadow-md);
+```
