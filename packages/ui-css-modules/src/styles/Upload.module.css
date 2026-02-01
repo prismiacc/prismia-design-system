@@ -1,0 +1,33 @@
+.upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px;
+  border: 2px dashed var(--semantic-border-default);
+  border-radius: var(--radius-m);
+  background-color: var(--semantic-background-surface);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.upload:hover {
+  border-color: var(--semantic-primary);
+  background-color: rgba(124, 102, 165, 0.05);
+}
+
+.upload__input {
+  display: none;
+}
+
+.upload__icon {
+  color: var(--semantic-text-secondary);
+  margin-bottom: 16px;
+}
+
+.upload__label {
+  font-size: 14px;
+  color: var(--semantic-text-secondary);
+  margin: 0;
+  text-align: center;
+}

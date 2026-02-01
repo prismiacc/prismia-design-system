@@ -1,0 +1,65 @@
+.inputNumber {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.inputNumber__label {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--semantic-text-primary);
+}
+
+.inputNumber__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  border: 1px solid var(--semantic-border-default);
+  border-radius: var(--radius-s);
+  overflow: hidden;
+  background-color: var(--semantic-background-surface);
+}
+
+.inputNumber__wrapper:focus-within {
+  border-color: var(--semantic-primary);
+  box-shadow: 0 0 0 3px rgba(124, 102, 165, 0.1);
+}
+
+.inputNumber__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: none;
+  border: none;
+  color: var(--semantic-text-secondary);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.inputNumber__button:hover {
+  background-color: var(--semantic-background-tertiary);
+  color: var(--semantic-text-primary);
+}
+
+.inputNumber__input {
+  flex: 1;
+  padding: 8px 12px;
+  font-size: 16px;
+  font-family: Inter, system-ui, sans-serif;
+  background: none;
+  color: var(--semantic-text-primary);
+  border: none;
+  text-align: center;
+}
+
+.inputNumber__input:focus {
+  outline: none;
+}
+
+.inputNumber__input::-webkit-inner-spin-button,
+.inputNumber__input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

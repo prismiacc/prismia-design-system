@@ -1,0 +1,48 @@
+.progress {
+  width: 100%;
+  background-color: var(--semantic-background-tertiary);
+  border-radius: var(--radius-s);
+  overflow: hidden;
+}
+
+.progress--small {
+  height: 4px;
+}
+
+.progress--medium {
+  height: 8px;
+}
+
+.progress--large {
+  height: 12px;
+}
+
+.progress__bar {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: width 0.3s ease;
+}
+
+.progress__bar--default {
+  background-color: var(--semantic-primary);
+}
+
+.progress__bar--success {
+  background-color: var(--base-semantic-success);
+}
+
+.progress__bar--warning {
+  background-color: var(--base-semantic-warning);
+}
+
+.progress__bar--error {
+  background-color: var(--base-semantic-error);
+}
+
+.progress__label {
+  font-size: 10px;
+  font-weight: 600;
+  color: white;
+}

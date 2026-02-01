@@ -1,0 +1,62 @@
+.alert {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px;
+  border-radius: var(--radius-s);
+  border: 1px solid;
+}
+
+.alert__content {
+  flex: 1;
+}
+
+.alert__title {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: var(--semantic-text-primary);
+}
+
+.alert__message {
+  font-size: 14px;
+  color: var(--semantic-text-secondary);
+}
+
+.alert__close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 2px;
+  color: currentColor;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.alert__close:hover {
+  opacity: 1;
+}
+
+.alert--info {
+  background-color: rgba(124, 102, 165, 0.1);
+  border-color: var(--semantic-primary);
+  color: var(--semantic-primary);
+}
+
+.alert--success {
+  background-color: rgba(26, 147, 46, 0.1);
+  border-color: var(--base-semantic-success);
+  color: var(--base-semantic-success);
+}
+
+.alert--warning {
+  background-color: rgba(255, 193, 7, 0.1);
+  border-color: var(--base-semantic-warning);
+  color: var(--base-semantic-warning);
+}
+
+.alert--error {
+  background-color: rgba(214, 69, 69, 0.1);
+  border-color: var(--base-semantic-error);
+  color: var(--base-semantic-error);
+}

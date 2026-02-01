@@ -1,0 +1,41 @@
+.floatingLabel {
+  position: relative;
+  display: flex;
+}
+
+.floatingLabel__input {
+  width: 100%;
+  padding: 20px 14px 8px;
+  font-size: 16px;
+  font-family: Inter, system-ui, sans-serif;
+  background-color: var(--semantic-background-surface);
+  color: var(--semantic-text-primary);
+  border: 1px solid var(--semantic-border-default);
+  border-radius: var(--radius-s);
+  transition: all 0.2s;
+}
+
+.floatingLabel__input:focus {
+  outline: none;
+  border-color: var(--semantic-primary);
+  box-shadow: 0 0 0 3px rgba(124, 102, 165, 0.1);
+}
+
+.floatingLabel__label {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: var(--semantic-text-secondary);
+  pointer-events: none;
+  transition: all 0.2s;
+}
+
+.floatingLabel--active .floatingLabel__label,
+.floatingLabel__input:focus + .floatingLabel__label {
+  top: 8px;
+  transform: translateY(0);
+  font-size: 12px;
+  color: var(--semantic-primary);
+}

@@ -1,0 +1,12 @@
+.label {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--semantic-text-primary);
+  margin-bottom: 4px;
+}
+
+.label__required {
+  color: var(--base-semantic-error);
+  margin-left: 4px;
+}

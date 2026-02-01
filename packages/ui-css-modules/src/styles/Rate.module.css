@@ -1,0 +1,30 @@
+.rate {
+  display: inline-flex;
+  gap: 4px;
+}
+
+.rate--disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.rate__star {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  color: var(--semantic-border-default);
+  transition: all 0.2s;
+}
+
+.rate__star:hover:not(:disabled) {
+  transform: scale(1.1);
+}
+
+.rate__star--filled {
+  color: var(--base-semantic-warning);
+}
+
+.rate__star:disabled {
+  cursor: not-allowed;
+}

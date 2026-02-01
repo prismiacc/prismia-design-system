@@ -1,0 +1,44 @@
+.select {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.select__label {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--semantic-text-primary);
+}
+
+.select__wrapper {
+  position: relative;
+}
+
+.select__field {
+  width: 100%;
+  padding: 12px 40px 12px 14px;
+  font-size: 16px;
+  font-family: Inter, system-ui, sans-serif;
+  background-color: var(--semantic-background-surface);
+  color: var(--semantic-text-primary);
+  border: 1px solid var(--semantic-border-default);
+  border-radius: var(--radius-s);
+  cursor: pointer;
+  transition: all 0.2s;
+  appearance: none;
+}
+
+.select__field:focus {
+  outline: none;
+  border-color: var(--semantic-primary);
+  box-shadow: 0 0 0 3px rgba(124, 102, 165, 0.1);
+}
+
+.select__arrow {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--semantic-text-secondary);
+  pointer-events: none;
+}

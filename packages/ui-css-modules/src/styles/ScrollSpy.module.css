@@ -1,0 +1,32 @@
+.scrollSpy {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 16px;
+  background-color: var(--semantic-background-surface);
+  border: 1px solid var(--semantic-border-default);
+  border-radius: var(--radius-s);
+}
+
+.scrollSpy__item {
+  padding: 8px 12px;
+  text-align: left;
+  background: none;
+  border: none;
+  border-left: 2px solid transparent;
+  color: var(--semantic-text-secondary);
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.scrollSpy__item:hover {
+  color: var(--semantic-text-primary);
+  background-color: var(--semantic-background-tertiary);
+}
+
+.scrollSpy__item--active {
+  border-left-color: var(--semantic-primary);
+  color: var(--semantic-primary);
+  font-weight: 500;
+}

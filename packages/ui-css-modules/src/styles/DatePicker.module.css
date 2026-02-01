@@ -1,0 +1,39 @@
+.datePicker {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.datePicker__label {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--semantic-text-primary);
+}
+
+.datePicker__input {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 16px;
+  font-family: Inter, system-ui, sans-serif;
+  background-color: var(--semantic-background-surface);
+  color: var(--semantic-text-primary);
+  border: 1px solid var(--semantic-border-default);
+  border-radius: var(--radius-s);
+  transition: all 0.2s;
+}
+
+.datePicker__input:focus {
+  outline: none;
+  border-color: var(--semantic-primary);
+  box-shadow: 0 0 0 3px rgba(124, 102, 165, 0.1);
+}
+
+.datePicker__input::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.datePicker__input::-webkit-calendar-picker-indicator:hover {
+  opacity: 1;
+}

@@ -1,0 +1,38 @@
+.divider {
+  background-color: var(--semantic-border-default);
+  flex-shrink: 0;
+}
+
+.divider--horizontal {
+  width: 100%;
+  height: 1px;
+}
+
+.divider--vertical {
+  width: 1px;
+  height: 100%;
+}
+
+.divider--small {
+  margin: 8px 0;
+}
+
+.divider--medium {
+  margin: 16px 0;
+}
+
+.divider--large {
+  margin: 24px 0;
+}
+
+.divider--vertical.divider--small {
+  margin: 0 8px;
+}
+
+.divider--vertical.divider--medium {
+  margin: 0 16px;
+}
+
+.divider--vertical.divider--large {
+  margin: 0 24px;
+}

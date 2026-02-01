@@ -1,0 +1,71 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 500;
+  border-radius: var(--radius-s);
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: Inter, system-ui, sans-serif;
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.button--medium {
+  padding: 12px 20px;
+  font-size: 14px;
+}
+
+.button--large {
+  padding: 14px 24px;
+  font-size: 16px;
+}
+
+.button--primary {
+  background-color: var(--base-semantic-success);
+  color: white;
+}
+
+.button--primary:hover:not(:disabled) {
+  background-color: var(--base-contrast-deepgray);
+  opacity: 0.9;
+}
+
+.button--secondary {
+  background-color: transparent;
+  color: var(--semantic-primary);
+  border: 1px solid var(--semantic-primary);
+}
+
+.button--secondary:hover:not(:disabled) {
+  background-color: rgba(124, 102, 165, 0.1);
+}
+
+.button--ghost {
+  background-color: transparent;
+  color: var(--semantic-primary);
+}
+
+.button--ghost:hover:not(:disabled) {
+  background-color: var(--semantic-background-tertiary);
+}
+
+.button__spinner {
+  display: flex;
+  animation: spin 1s linear infinite;
+}
+
+.button__content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}

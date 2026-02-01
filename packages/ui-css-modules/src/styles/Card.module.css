@@ -1,0 +1,24 @@
+.card {
+  background-color: var(--semantic-background-surface);
+  border: 1px solid var(--semantic-border-default);
+  border-radius: var(--radius-m);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  transition: all 0.2s;
+}
+
+.card--small {
+  padding: 16px;
+}
+
+.card--medium {
+  padding: 24px;
+}
+
+.card--large {
+  padding: 32px;
+}
+
+.card--hoverable:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+  transform: translateY(-2px);
+}

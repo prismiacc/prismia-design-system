@@ -1,0 +1,44 @@
+.formLayout {
+  display: grid;
+  width: 100%;
+}
+
+.formLayout--columns-1 {
+  grid-template-columns: 1fr;
+}
+
+.formLayout--columns-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.formLayout--columns-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.formLayout--gap-small {
+  gap: 12px;
+}
+
+.formLayout--gap-medium {
+  gap: 16px;
+}
+
+.formLayout--gap-large {
+  gap: 24px;
+}
+
+.formField {
+  display: flex;
+  flex-direction: column;
+}
+
+.formField--fullWidth {
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 768px) {
+  .formLayout--columns-2,
+  .formLayout--columns-3 {
+    grid-template-columns: 1fr;
+  }
+}

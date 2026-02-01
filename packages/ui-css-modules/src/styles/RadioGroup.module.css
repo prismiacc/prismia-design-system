@@ -1,0 +1,49 @@
+.radioGroup {
+  display: flex;
+  gap: 12px;
+}
+
+.radioGroup--vertical {
+  flex-direction: column;
+}
+
+.radioGroup--horizontal {
+  flex-direction: row;
+}
+
+.radioGroup__item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.radioGroup__item--disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.radioGroup__input {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  border: 2px solid var(--semantic-border-default);
+  border-radius: 50%;
+  transition: all 0.2s;
+}
+
+.radioGroup__input:checked {
+  background-color: var(--semantic-primary);
+  border-color: var(--semantic-primary);
+}
+
+.radioGroup__input:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(124, 102, 165, 0.2);
+}
+
+.radioGroup__label {
+  font-size: 14px;
+  color: var(--semantic-text-primary);
+  user-select: none;
+}
