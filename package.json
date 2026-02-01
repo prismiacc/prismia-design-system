@@ -1,0 +1,36 @@
+{
+  "name": "prismia-design-system",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Design System Prismia - Monorepo enterprise com tokens e componentes React",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seu-usuario/prismia-design-system.git"
+  },
+  "scripts": {
+    "build": "pnpm -r --filter='./packages/*' build",
+    "build:tokens": "pnpm --filter @prismia/tokens build",
+    "build:ui": "pnpm --filter '@prismia/ui-*' build",
+    "dev": "pnpm --filter @prismia/docs dev",
+    "storybook": "pnpm --filter @prismia/docs storybook",
+    "build:storybook": "pnpm --filter @prismia/docs build-storybook",
+    "lint": "pnpm -r lint",
+    "test": "pnpm -r test",
+    "publish:packages": "pnpm build && pnpm -r publish --access public"
+  },
+  "keywords": ["design-system", "prismia", "tokens", "react", "tailwind", "lovable"],
+  "author": "Prismia Design Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "@types/react": "^18.2.45",
+    "@types/react-dom": "^18.2.18",
+    "typescript": "^5.3.3",
+    "tsup": "^8.0.1",
+    "vite": "^5.0.8"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  }
+}

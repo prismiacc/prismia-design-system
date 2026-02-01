@@ -1,135 +1,103 @@
 # Prismia Design System
 
-Design System oficial do Prismia - Sistema completo de tokens, componentes React e documentação para projetos enterprise.
+Design System enterprise-grade, compatível com Lovable, publicável no NPM.
 
-## Estrutura do Monorepo
+## Arquitetura
 
-```
-prismia-design-system/
-├── packages/
-│   ├── tokens/         # Design tokens (JSON + CSS)
-│   ├── ui-tailwind/    # Componentes React + Tailwind
-│   └── ui-css/         # Componentes React + CSS Modules
-└── apps/
-    └── docs/           # Documentação Storybook
-```
+Monorepo com pnpm workspaces:
 
-## Instalação
+- `@prismia/tokens` - Design tokens (CSS Variables)
+- `@prismia/ui-tailwind` - Componentes React + Tailwind CSS
+- `@prismia/ui-css` - Componentes React + CSS Modules
+- `@prismia/docs` - Documentação Storybook
 
-### Requisitos
-
-- Node.js 18+
-- pnpm 8+
-
-### Configuração Inicial
+## Instalação Rápida
 
 ```bash
-# Clonar repositório
-git clone https://github.com/seu-usuario/prismia-design-system.git
-cd prismia-design-system
+# Instalar tokens
+pnpm add @prismia/tokens
 
+# Instalar componentes (escolha um)
+pnpm add @prismia/ui-tailwind
+# ou
+pnpm add @prismia/ui-css
+```
+
+## Uso na Lovable
+
+### 1. Importar Tokens
+
+```tsx
+// No topo do seu App.tsx ou _app.tsx
+import '@prismia/tokens/css';
+```
+
+### 2. Usar Componentes
+
+```tsx
+import { Button, Card, Input } from '@prismia/ui-tailwind';
+
+function MeuApp() {
+  return (
+    <Card>
+      <h2>Bem-vindo ao Prismia</h2>
+      <Input label="Nome" placeholder="Digite seu nome" />
+      <Button variant="primary">Enviar</Button>
+    </Card>
+  );
+}
+```
+
+## Componentes Disponíveis
+
+**General & Layout (6)**
+- Colors & Shadow, Typography, Icons
+- Layout Templates, Spacing System, Grid System
+
+**Components (25)**
+- Accordion, Alerts, Badge, Breadcrumb, Button, Button Group, Card, Carousel, 
+  Close Button, Collapse, Dropdowns, Divider, List Group, Modal, Navbar, 
+  Navs & Tabs, Offcanvas, Pagination, Placeholders, Popovers, Progress, 
+  Scrollspy, Spinners, Toasts, Tooltips
+
+**Forms (13)**
+- Form Layout, Floating Labels, Checks/Radios/Switches, Color Picker, 
+  Date Picker, Time Picker, Datalist, Input, Input Number, Range, Rate, 
+  Select, Upload
+
+**Content & Extra (8)**
+- Images, Tables, Figures, Avatar, Comment, Empty State, Tags, Transfer
+
+## Atualização de Tema
+
+```bash
+pnpm update @prismia/tokens
+```
+
+## Desenvolvimento Local
+
+```bash
 # Instalar dependências
 pnpm install
 
-# Build dos tokens
-pnpm build:tokens
-
 # Build de todos os pacotes
 pnpm build
-```
 
-## Desenvolvimento
-
-### Rodar Storybook
-
-```bash
+# Iniciar Storybook
 pnpm storybook
 ```
 
-Acesse http://localhost:6006
-
-### Build
+## Publicação
 
 ```bash
-# Build completo
-pnpm build
-
-# Build apenas tokens
-pnpm build:tokens
+pnpm publish:packages
 ```
-
-## Uso nos Projetos
-
-### Instalação em Projeto Externo
-
-#### React + Tailwind CSS
-
-```bash
-npm install @prismia/ui-tailwind @prismia/tokens
-```
-
-```tsx
-import { Button } from '@prismia/ui-tailwind';
-
-function App() {
-  return <Button variant="primary">Clique aqui</Button>;
-}
-```
-
-#### React + CSS Modules
-
-```bash
-npm install @prismia/ui-css @prismia/tokens
-```
-
-```tsx
-import { Button } from '@prismia/ui-css';
-
-function App() {
-  return <Button variant="primary">Clique aqui</Button>;
-}
-```
-
-### Tokens CSS
-
-Importe os tokens diretamente no CSS:
-
-```css
-@import '@prismia/tokens/dist/tokens.css';
-
-.meu-componente {
-  background-color: var(--base-brand-lavender);
-  padding: var(--spacing-4);
-  border-radius: var(--radius-m);
-}
-```
-
-## Pacotes
-
-### @prismia/tokens
-
-Design tokens em JSON e CSS Variables. Fonte da verdade para cores, espaçamentos, tipografia, etc.
-
-### @prismia/ui-tailwind
-
-Biblioteca de componentes React usando Tailwind CSS.
-
-### @prismia/ui-css
-
-Biblioteca de componentes React usando CSS Modules.
-
-## Contribuição
-
-1. Crie uma branch: `git checkout -b feature/minha-feature`
-2. Faça commit: `git commit -m 'feat: adiciona nova feature'`
-3. Push: `git push origin feature/minha-feature`
-4. Abra um Pull Request
 
 ## Licença
 
-MIT License - Veja LICENSE para mais detalhes.
+MIT - Veja LICENSE para detalhes.
 
-## Links
+## Suporte
 
-- Documentação: [Storybook](https://seu-usuario.github.io/prismia-design-system)
-- Issues: [GitHub Issues](https://github.com/seu-usuario/prismia-design-system/issues)
+Issues: https://github.com/seu-usuario/prismia-design-system/issues
+Documentação: https://prismia-ds.vercel.app
