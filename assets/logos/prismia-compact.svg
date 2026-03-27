@@ -1,0 +1,20 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Prism Icon Only -->
+  <g opacity="0.95">
+    <path d="M40 15L60 30L40 45L20 30L40 15Z" fill="#D8CCE8"/>
+    <path d="M40 15L60 30L40 45L20 30L40 15Z" fill="url(#gradientC)" opacity="0.6"/>
+    <path d="M40 45L60 30L50 37.5L40 52L30 37.5L20 30L40 45Z" fill="#C9B8DE" opacity="0.8"/>
+    <circle cx="40" cy="30" r="3" fill="#7C66A5" opacity="0.4"/>
+  </g>
+  
+  <!-- Letter P -->
+  <text x="40" y="72" font-family="Space Grotesk, sans-serif" font-size="20" font-weight="700" fill="#3C3F45" text-anchor="middle">P</text>
+  
+  <defs>
+    <linearGradient id="gradientC" x1="20" y1="15" x2="60" y2="45" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#D8CCE8"/>
+      <stop offset="50%" stop-color="#B9A9D0"/>
+      <stop offset="100%" stop-color="#7C66A5"/>
+    </linearGradient>
+  </defs>
+</svg>

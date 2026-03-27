@@ -1,0 +1,17 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Minimal Prism for Favicon -->
+  <rect width="32" height="32" fill="#FBFAF8" rx="6"/>
+  <g opacity="0.95">
+    <path d="M16 8L22 13L16 18L10 13L16 8Z" fill="#D8CCE8"/>
+    <path d="M16 8L22 13L16 18L10 13L16 8Z" fill="url(#gradientF)" opacity="0.7"/>
+    <path d="M16 18L22 13L19 15.5L16 20L13 15.5L10 13L16 18Z" fill="#C9B8DE" opacity="0.9"/>
+    <circle cx="16" cy="13" r="1.5" fill="#7C66A5"/>
+  </g>
+  
+  <defs>
+    <linearGradient id="gradientF" x1="10" y1="8" x2="22" y2="18" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#D8CCE8"/>
+      <stop offset="100%" stop-color="#7C66A5"/>
+    </linearGradient>
+  </defs>
+</svg>

@@ -1,0 +1,19 @@
+<svg width="200" height="280" viewBox="0 0 200 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Prism Icon -->
+  <g opacity="0.9">
+    <path d="M100 40L140 80L100 120L60 80L100 40Z" fill="#D8CCE8"/>
+    <path d="M100 40L140 80L100 120L60 80L100 40Z" fill="url(#gradient1)" opacity="0.6"/>
+    <path d="M100 120L140 80L120 100L100 140L80 100L60 80L100 120Z" fill="#C9B8DE" opacity="0.8"/>
+  </g>
+  
+  <!-- Text: PRISMIA -->
+  <text x="100" y="180" font-family="Space Grotesk, sans-serif" font-size="32" font-weight="700" fill="#3C3F45" text-anchor="middle">PRISMIA</text>
+  <text x="100" y="210" font-family="Inter, sans-serif" font-size="14" font-weight="400" fill="#5A5E66" text-anchor="middle" letter-spacing="2">WORKSPACE</text>
+  
+  <defs>
+    <linearGradient id="gradient1" x1="60" y1="40" x2="140" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#D8CCE8"/>
+      <stop offset="100%" stop-color="#7C66A5"/>
+    </linearGradient>
+  </defs>
+</svg>
