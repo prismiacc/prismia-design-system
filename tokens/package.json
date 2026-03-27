@@ -1,0 +1,35 @@
+{
+  "name": "@prismia/tokens",
+  "version": "1.0.0",
+  "description": "Design tokens do Prismia Design System - Tokens em 3 camadas (BASE → SEMANTIC → COMPONENT)",
+  "main": "./dist/tokens.json",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": "./dist/tokens.json",
+    "./css": "./dist/tokens.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "node ../../scripts/build-tokens.js"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "keywords": [
+    "design-tokens",
+    "prismia",
+    "css-variables",
+    "design-system",
+    "tokens"
+  ],
+  "author": "Prismia Design Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seu-usuario/prismia-design-system.git",
+    "directory": "packages/tokens"
+  }
+}
